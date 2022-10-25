@@ -1,14 +1,15 @@
-var num=""; var input="+"; var lastinput="+";
+var num="";var n="";var input="+"; var lastinput="+";
 var result=0; var store=0;
 document.querySelector("#displaypanel").addEventListener("click",function() {
     document.querySelector("#displaypanel").innerHTML = "Hello Everyone!";
     num="";  input="+";  lastinput="+";
-    result=0; store=0;
+    result=0; store=0;n="";
 })
 function build(a)
 {
+  n=n+a;
   num=num+a;
-  document.getElementById("displaypanel").innerHTML=num;
+  document.getElementById("displaypanel").innerHTML=n;
 }
 
 function operator(op)
@@ -21,12 +22,11 @@ function operator(op)
   {
     calc(lastinput);
     document.getElementById("displaypanel").innerHTML=store;
-    
+    n=store;
   }
   else
   {
       calc(lastinput);
-     
   }
 }
 function calc(lastinput)
