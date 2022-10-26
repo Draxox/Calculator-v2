@@ -53,15 +53,12 @@ body{
     border-image:linear-gradient(90deg,yellow,violet);
     border-image-slice:1;
     background:transparent;
+    transition: box-shadow .12s ease-in-out;
 }
 .btn:hover{
-  
-    background-image:linear-gradient(yellow,red);
+    box-shadow:inset 0 0 0 .2rem #fff;
 }
 
-.btn:focus{
-   box-shadow:0 2px 5px black;
-}
 .btn:nth-child(14)
 {
    grid-column:2/4;
