@@ -1,7 +1,7 @@
 var num="";var n="";var input="+"; var lastinput="+";
 var result=0; var store=0;
 document.querySelector("#displaypanel").addEventListener("click",function() {
-    document.querySelector("#displaypanel").innerHTML = "Hello Everyone!";
+    document.querySelector("#displaypanel").innerHTML = "0";
     num="";  input="+";  lastinput="+";
     result=0; store=0;n="";
 })
